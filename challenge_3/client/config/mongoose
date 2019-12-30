@@ -1,0 +1,35 @@
+var mongoose = require('mongoose');
+
+// make a connection
+mongoose.connect('mongodb://localhost:27017/checkout', { useNewUrlParser: true, useUnifiedTopology: true });
+
+// get reference to database
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+
+db.once('open', () => {
+  console.log("Connection Successful!");
+
+  // define Schema
+
+
+  // compile schema to model
+
+
+});
+var User = mongoose.Schema({
+  name: String,
+  email: String,
+  password: Number,
+  line1: String,
+  city: String,
+  state: String,
+  creditCard: Number,
+  expireDate: Date,
+  cvv: Number,
+  billingZip: Number
+});
+
+var user = mongoose.model('User', User, 'checkout');
+module.exports = user; 
