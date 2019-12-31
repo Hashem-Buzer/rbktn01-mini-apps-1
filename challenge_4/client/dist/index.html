@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Connect Four</title>
+    <style>
+      body {
+        font-family: "Lucida Sans Unicode";
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      table {
+        margin: 0 auto;
+        border-spacing: 0px 0px;
+      }
+
+      .button {
+        background-color: #303030;
+        color: #50c8ff;
+        height: 30px;
+        width: 100px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #50c8ff;
+        color: #303030;
+      }
+
+      .cell {
+        height: 70px;
+        width: 70px;
+        background-color: #303030;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .red-sm {
+        background-color: red;
+      }
+
+      .yellow-sm {
+        background-color: yellow;
+      }
+
+      .message {
+        text-align: center;
+        font-size: 17px;
+      }
+
+      .white {
+        height: 60px;
+        width: 60px;
+        background-color: #fff;
+        border-radius: 100px;
+      }
+
+      .red {
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        border-radius: 100px;
+      }
+
+      .green {
+        height: 60px;
+        width: 60px;
+        background-color: green;
+        border-radius: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h2 class="animated fadeInRightBig">Welcome to Connect4 Game</h2>
+      <div class="circles"></div>
+      <div id="main"></div>
+    </center>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://fb.me/react-0.14.3.js"></script>
+    <script src="https://fb.me/react-dom-0.14.3.js"></script>
+    <script type="module" src="bundle.js"></script>
+  </body>
+</html>
