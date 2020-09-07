@@ -11,7 +11,7 @@ class App extends React.Component {
       currentPlayer: null,
       board: [],
       gameOver: false,
-      message: ""
+      message: "",
     };
 
     // Bind play function to App component
@@ -37,7 +37,7 @@ class App extends React.Component {
       board,
       currentPlayer: this.state.player1,
       gameOver: false,
-      message: ""
+      message: "",
     });
   }
 
@@ -64,13 +64,13 @@ class App extends React.Component {
         this.setState({
           board,
           gameOver: true,
-          message: "Player 1 (red) wins!"
+          message: "Player 1 (red) wins!",
         });
       } else if (result === this.state.player2) {
         this.setState({
           board,
           gameOver: true,
-          message: "Player 2 (green) wins!"
+          message: "Player 2 (green) wins!",
         });
       } else if (result === "draw") {
         this.setState({ board, gameOver: true, message: "Draw game." });
